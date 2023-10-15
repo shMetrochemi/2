@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>输入管理员密码</title>
+	<meta charset="GB2312">
+	<script>
+		function checkpassword() {
+			var password=document.getElementByld("passwordBox");
+			var passwordEntered=password.value;
+			if(passwordEntered=="DATA114514") {
+				return true;
+			}
+			alert("密码错误！您不是管理员？")
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<h1>管理员登陆</h1>
+	<h3>Administrator Log-in</h3>
+	<em>请输入管理员密码！Please Enter Your Password!</em>
+	<p>密码：
+		<input id="passwordBox" type="password"/>
+	</p>
+	<a href="tp.html" onclick="return checkPassword()">
+	<input type="button" value="点击登录">
+	</a>
+	<div style="border-style: solid; border-width: 1px; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px">
+	<p align="center">copyright&copy Shanghai Hongshan Middle School Chemi Group 
+	ZhouSama114514 2020~2023</p>
+	<p align="center">上海市洪山中学六班、七班版权所有</p>
+	<p align="center">周楚瑜、朱迪驰、邵语哲制作</p>
+	<p align="center">邮箱：<a href="../ZCY11233833@163.com">ZCY11233833@163.com</a> 
+	电话：13818547494 地址：上海市上钢一村23号105室</p>
+	<p align="center">感谢Github.com的开源建站</p>
+	</div>
+	<p align="left">vision 2.0.0 Alpha Do not copy!</p>
+
+</body>
+</html>
